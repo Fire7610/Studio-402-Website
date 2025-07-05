@@ -26,6 +26,14 @@ export default {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.main-content {
+  flex: 1;
+  position: relative;
+  background: var(--bg-color);
+  transition: background-color var(--transition);
 }
 
 .main-content {

@@ -2,29 +2,29 @@
   <div class="about-view">
     <div class="container">
       <!-- Hero Section -->
-      <div class="about-hero">
-        <h1>About Studio 402</h1>
-        <p class="hero-subtitle">The Story Behind the Studio</p>
+      <div class="about-hero animate-fade-in">
+        <h1 class="animate-fade-in-up">About Studio 402</h1>
+        <p class="hero-subtitle animate-fade-in-up">The Story Behind the Studio</p>
       </div>
 
       <!-- Studio Story -->
-      <section class="studio-story">
+      <section class="studio-story animate-fade-in">
         <div class="story-content">
-          <h2>🏠 Our Origin Story</h2>
-          <div class="story-text">
-            <p>
+          <h2 class="animate-slide-in-left">🏠 Our Origin Story</h2>
+          <div class="story-text stagger-children">
+            <p class="animate-fade-in-up">
               Studio 402 was born from a simple idea: what if college friends and roommates combined 
               their passion for gaming with their technical skills to create something amazing? 
               Our studio represents the unique bond between friends who decided to turn their shared 
               dreams into reality.
             </p>
-            <p>
+            <p class="animate-fade-in-up">
               Named after our college apartment number, Studio 402 embodies the spirit of collaboration, 
               creativity, and friendship that started in those late-night coding sessions and gaming marathons. 
               What began as hobby projects has evolved into a dedicated game development studio focused on 
               creating engaging mobile experiences.
             </p>
-            <p>
+            <p class="animate-fade-in-up">
               We believe that the best games come from passionate teams who understand both the technical 
               challenges and the joy of gaming. Our unique perspective as friends working together allows 
               us to create games that are both technically sound and genuinely fun.
@@ -166,8 +166,15 @@
 </template>
 
 <script>
+import { animationManager } from '../utils/animations.js'
+
 export default {
   name: 'AboutView',
+  mounted() {
+    this.$nextTick(() => {
+      animationManager.init()
+    })
+  },
   metaInfo: {
     title: 'About Us - Studio 402',
     meta: [
