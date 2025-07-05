@@ -1,0 +1,17 @@
+Studio 402 website, a website for our studio composed of college friends, and roommates.
+built with vue.js
+on 2025 july during summer class and while creating projects
+
+current projects not published yet is Production.inc
+
+but inorder to publish we need a website for 
+terms and conditions, privacy policy, and other legal documents to pubish on google playstore
+main website is studio402.com
+
+will add more information later
+and will update the website with more projects and information
+
+but first the website must contain
+terms and conditions, privacy policy, support, and contact us page
+an about us page
+and a projects page to showcase our projects.
