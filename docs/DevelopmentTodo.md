@@ -250,7 +250,57 @@ Website for Studio 402 - A creative studio composed of college friends and roomm
 - ✅ **Error Handling** - Graceful degradation for animation failures
 - ✅ **Debug Tools** - Animation debugging and performance monitoring utilities
 
-**Ready for Version 1.0.0:** Production deployment and final testing
+**Ready for Version 0.5.1:** Critical theme fixes for text visibility
+
+---
+
+### ✅ Version 0.5.1 - Theme Fix (Critical)
+**Status:** COMPLETED ✅
+**Goal:** Fix critical theme issues affecting text visibility and user experience
+
+#### Tasks:
+- [x] **Fix dark mode text visibility** - Address font color issues where text becomes invisible in dark theme
+- [x] **Review color contrast ratios** - Ensure WCAG compliance for both light and dark themes
+- [x] **Fix component-specific theme issues** - Identify and fix components with hardcoded colors
+- [x] **Update CSS variables** - Ensure all text colors properly inherit theme variables
+- [x] **Test theme switching** - Verify smooth transitions and no color conflicts
+- [x] **Fix gradient text in dark mode** - Ensure gradient text remains visible across themes
+- [x] **Update button text colors** - Fix button text visibility in both themes
+- [x] **Review card component colors** - Ensure card text and backgrounds work in both themes
+
+#### Critical Issues Resolved:
+- ✅ **Text Invisibility** - Fixed text elements becoming invisible when switching to dark mode
+- ✅ **Color Inheritance** - Components now properly inherit theme-aware color variables
+- ✅ **Hardcoded Colors** - Removed hardcoded text colors that override theme system
+- ✅ **Contrast Issues** - Improved text contrast ratios for better accessibility
+- ✅ **Gradient Text** - Fixed gradient text visibility in dark theme
+- ✅ **Interactive Elements** - Ensured hover states work correctly in both themes
+
+#### Theme System Improvements:
+- [x] **Enhanced CSS Variables** - Added missing text color variables for theme consistency
+- [x] **Component Audit** - Reviewed all components for theme compatibility
+- [x] **Fallback Colors** - Added fallback colors for unsupported browsers
+- [x] **Enhanced Dark Theme** - Improved dark theme color palette and contrast ratios
+- [x] **Transition Smoothing** - Added smooth transitions for theme switching
+
+#### Code Changes Applied:
+- ✅ **main.css** - Enhanced dark theme variables with better contrast and color inheritance
+- ✅ **AboutView.vue** - Replaced hardcoded backgrounds with theme-aware variables
+- ✅ **ProjectsView.vue** - Fixed all white backgrounds and button colors to use CSS variables
+- ✅ **HomeView.vue** - Updated hardcoded colors in buttons and cards
+- ✅ **AppFooter.vue** - Converted all hardcoded colors to theme-aware variables
+- ✅ **App.vue** - Fixed hardcoded text color to use CSS variables
+- ✅ **Gradient Text** - Added specific dark theme support for gradient text elements
+- ✅ **Button Components** - Fixed all button variants to work in both themes
+- ✅ **Card Components** - Updated all card backgrounds to be theme-aware
+
+#### Accessibility Improvements:
+- ✅ **WCAG Compliance** - Enhanced contrast ratios meet WCAG AA standards
+- ✅ **Dark Theme Colors** - Improved color palette for better readability
+- ✅ **Text Visibility** - All text elements now properly visible in both themes
+- ✅ **Interactive Elements** - Focus states and hover effects work in both themes
+
+**Development Status:** ✅ All theme issues resolved - Ready for production deployment
 
 ---
 

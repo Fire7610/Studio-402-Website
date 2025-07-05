@@ -66,7 +66,7 @@ export default {
 <style scoped>
 .footer {
   background-color: var(--primary-color);
-  color: white;
+  color: var(--text-white);
   margin-top: auto;
 }
 
@@ -78,13 +78,13 @@ export default {
 }
 
 .footer-section h3 {
-  color: white;
+  color: var(--text-white);
   margin-bottom: 1rem;
   font-size: 1.5rem;
 }
 
 .footer-section h4 {
-  color: white;
+  color: var(--text-white);
   margin-bottom: 1rem;
   font-size: 1.1rem;
 }
@@ -92,7 +92,8 @@ export default {
 .footer-section p {
   margin-bottom: 1rem;
   line-height: 1.6;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--text-white);
+  opacity: 0.9;
 }
 
 .footer-links {
@@ -106,13 +107,16 @@ export default {
 }
 
 .footer-links a {
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--text-white);
+  opacity: 0.8;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .footer-links a:hover {
-  color: white;
+  color: var(--text-white);
+  opacity: 1;
+  transform: translateX(2px);
 }
 
 .footer-social {
@@ -120,7 +124,8 @@ export default {
 }
 
 .coming-soon {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--text-white);
+  opacity: 0.6;
   font-size: 0.9rem;
   font-style: italic;
 }
@@ -128,17 +133,20 @@ export default {
 .project-note {
   margin-top: 1rem;
   padding: 0.5rem;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--bg-light);
   border-radius: 4px;
   border-left: 3px solid var(--secondary-color);
+  opacity: 0.2;
 }
 
 .project-note small {
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--text-white);
+  opacity: 0.9;
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid var(--border-color);
+  opacity: 0.3;
   padding: 1.5rem 0;
 }
 
@@ -152,12 +160,14 @@ export default {
 
 .footer-bottom p {
   margin: 0;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--text-white);
+  opacity: 0.8;
 }
 
 .footer-meta {
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--text-white);
+  opacity: 0.6;
 }
 
 /* Mobile styles */

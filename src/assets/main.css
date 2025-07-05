@@ -84,6 +84,7 @@
   --text-color: #f7fafc;
   --text-light: #a0aec0;
   --text-lighter: #718096;
+  --text-white: #ffffff;
   --bg-color: #1a202c;
   --bg-light: #2d3748;
   --bg-lighter: #4a5568;
@@ -91,6 +92,27 @@
   --border-color: #4a5568;
   --border-light: #2d3748;
   --border-dark: #718096;
+  
+  /* Enhanced contrast for better readability */
+  --primary-color: #90cdf4;
+  --primary-light: #bee3f8;
+  --primary-dark: #63b3ed;
+  --secondary-color: #63b3ed;
+  --secondary-light: #90cdf4;
+  --secondary-dark: #4299e1;
+  --accent-color: #f687b3;
+  --accent-light: #fbb6ce;
+  --accent-dark: #ed64a6;
+  --success-color: #68d391;
+  --warning-color: #fbd38d;
+  --error-color: #fc8181;
+  
+  /* Dark theme specific shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 10px 15px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 20px 25px rgba(0, 0, 0, 0.3);
+  --shadow-xl: 0 25px 50px rgba(0, 0, 0, 0.5);
 }
 
 /* Reset and Base Styles */
@@ -901,3 +923,97 @@ button,
     border: 1px solid var(--border-color) !important;
   }
 }
+
+/* Enhanced Dark Theme Support */
+[data-theme="dark"] .gradient-text {
+  background: linear-gradient(135deg, var(--secondary-color) 0%, var(--accent-color) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Fix for gradient text visibility in dark mode */
+[data-theme="dark"] .brand h2 {
+  background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Dark theme button text fixes */
+[data-theme="dark"] .btn-primary {
+  color: var(--bg-color);
+}
+
+[data-theme="dark"] .btn-secondary {
+  color: var(--text-color);
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .btn-secondary:hover {
+  color: var(--text-color);
+  border-color: var(--secondary-color);
+}
+
+/* Enhanced contrast for dark theme */
+[data-theme="dark"] .hero-section {
+  color: var(--text-white);
+}
+
+[data-theme="dark"] .hero-badge {
+  background: var(--bg-card);
+  color: var(--text-color);
+}
+
+/* Dark theme specific animations and effects */
+[data-theme="dark"] .card:hover {
+  box-shadow: var(--shadow-xl);
+}
+
+[data-theme="dark"] .highlight-card::before,
+[data-theme="dark"] .project-placeholder::before {
+  background: linear-gradient(90deg, transparent, rgba(99, 179, 237, 0.1), transparent);
+}
+
+/* Improved text contrast in dark mode */
+[data-theme="dark"] h1,
+[data-theme="dark"] h2,
+[data-theme="dark"] h3,
+[data-theme="dark"] h4,
+[data-theme="dark"] h5,
+[data-theme="dark"] h6 {
+  color: var(--text-color);
+}
+
+[data-theme="dark"] p {
+  color: var(--text-color);
+}
+
+/* Dark theme link colors */
+[data-theme="dark"] a {
+  color: var(--secondary-color);
+}
+
+[data-theme="dark"] a:hover {
+  color: var(--secondary-light);
+}
+
+/* Theme transition smoothing */
+* {
+  transition-property: background-color, border-color, color, box-shadow;
+  transition-duration: var(--transition);
+  transition-timing-function: ease;
+}
+
+/* Fix for brand logo in dark mode */
+[data-theme="dark"] .brand-link {
+  color: var(--text-color);
+}
+
+/* Dark theme footer adjustments */
+[data-theme="dark"] .footer {
+  background-color: var(--bg-dark);
+  border-top: 1px solid var(--border-color);
+}
+
+/* Print styles for both themes */

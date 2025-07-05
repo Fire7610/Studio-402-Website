@@ -389,7 +389,7 @@ export default {
 }
 
 .btn-primary {
-  background: white;
+  background: var(--bg-card);
   color: var(--primary-color);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
@@ -401,16 +401,18 @@ export default {
 }
 
 .btn-secondary {
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  background: var(--bg-card);
+  color: var(--text-white);
+  border: 2px solid var(--border-color);
   backdrop-filter: blur(10px);
+  opacity: 0.9;
 }
 
 .btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.5);
+  background: var(--bg-light);
+  border-color: var(--secondary-color);
   transform: translateY(-2px);
+  opacity: 1;
 }
 
 .btn-outline {
@@ -446,7 +448,7 @@ export default {
 }
 
 .highlight-card {
-  background: white;
+  background: var(--bg-card);
   padding: 2.5rem;
   border-radius: 12px;
   text-align: center;

@@ -247,7 +247,7 @@ export default {
 
 /* Featured Project */
 .featured-project {
-  background: white;
+  background: var(--bg-card);
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   margin-bottom: 3rem;
@@ -451,7 +451,7 @@ export default {
 }
 
 .process-step {
-  background: white;
+  background: var(--bg-card);
   padding: 2rem;
   border-radius: 12px;
   text-align: center;
@@ -528,7 +528,7 @@ export default {
 }
 
 .category-card {
-  background: white;
+  background: var(--bg-card);
   padding: 2rem;
   border-radius: 10px;
   text-align: center;
@@ -559,7 +559,7 @@ export default {
 
 /* Project Philosophy */
 .project-philosophy {
-  background: white;
+  background: var(--bg-card);
   padding: 3rem;
   border-radius: 12px;
   margin-bottom: 3rem;
@@ -649,7 +649,7 @@ export default {
 }
 
 .btn-primary {
-  background: white;
+  background: var(--bg-card);
   color: var(--primary-color);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
@@ -661,15 +661,17 @@ export default {
 }
 
 .btn-secondary {
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  background: var(--bg-card);
+  color: var(--text-white);
+  border: 2px solid var(--border-color);
+  opacity: 0.9;
 }
 
 .btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.5);
+  background: var(--bg-light);
+  border-color: var(--secondary-color);
   transform: translateY(-2px);
+  opacity: 1;
 }
 
 /* Mobile Responsive */
