@@ -22,7 +22,14 @@
               <router-link to="/projects" class="nav-link" @click="closeMobileMenu">Projects</router-link>
             </li>
             <li class="nav-item dropdown">
-              <span class="nav-link dropdown-toggle">Legal</span>
+              <button 
+                type="button" 
+                class="nav-link dropdown-toggle"
+                :aria-expanded="false"
+                aria-haspopup="true"
+              >
+                Legal
+              </button>
               <ul class="dropdown-menu">
                 <li><router-link to="/terms" class="dropdown-link" @click="closeMobileMenu">Terms & Conditions</router-link></li>
                 <li><router-link to="/privacy" class="dropdown-link" @click="closeMobileMenu">Privacy Policy</router-link></li>
@@ -167,12 +174,16 @@ export default {
   color: var(--text-color);
   text-decoration: none;
   font-weight: 600;
-  padding: var(--spacing-sm) var(--spacing-md);
+  padding: var(--spacing-md) var(--spacing-lg);
   border-radius: var(--radius);
   transition: all var(--transition);
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-link::before {
@@ -210,6 +221,11 @@ export default {
 
 .dropdown-toggle {
   position: relative;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
 }
 
 .dropdown-toggle::after {
@@ -253,10 +269,13 @@ export default {
   display: block;
   color: var(--text-color);
   text-decoration: none;
-  padding: var(--spacing-sm) var(--spacing-lg);
+  padding: var(--spacing-md) var(--spacing-lg);
   transition: all var(--transition);
   border-radius: var(--radius-sm);
   margin: 0 var(--spacing-sm);
+  min-height: 44px;
+  display: flex;
+  align-items: center;
 }
 
 .dropdown-link:hover {
@@ -270,8 +289,10 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  min-width: 44px;
+  min-height: 44px;
+  width: 44px;
+  height: 44px;
   border-radius: var(--radius-full);
   background: var(--bg-light);
   border: 2px solid var(--border-color);
@@ -279,6 +300,7 @@ export default {
   transition: all var(--transition);
   font-size: var(--font-size-lg);
   margin-left: var(--spacing-md);
+  padding: var(--spacing-xs);
 }
 
 .theme-toggle-btn:hover {
@@ -300,12 +322,15 @@ export default {
   display: none;
   flex-direction: column;
   cursor: pointer;
-  width: 28px;
-  height: 22px;
-  justify-content: space-between;
-  padding: var(--spacing-xs);
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-sm);
   border-radius: var(--radius-sm);
   transition: all var(--transition);
+  position: relative;
+  gap: 6px;
 }
 
 .mobile-menu-toggle:hover {
@@ -313,7 +338,7 @@ export default {
 }
 
 .hamburger-line {
-  width: 100%;
+  width: 24px;
   height: 3px;
   background: var(--text-color);
   border-radius: var(--radius-sm);
@@ -347,8 +372,10 @@ export default {
   }
   
   .theme-toggle-btn {
-    width: 36px;
-    height: 36px;
+    min-width: 44px;
+    min-height: 44px;
+    width: 44px;
+    height: 44px;
     font-size: var(--font-size-base);
     margin-left: var(--spacing-sm);
   }
@@ -393,8 +420,11 @@ export default {
 
   .nav-link {
     font-size: var(--font-size-xl);
-    padding: var(--spacing-md) var(--spacing-xl);
+    padding: var(--spacing-lg) var(--spacing-xl);
     border-radius: var(--radius-lg);
+    min-height: 48px;
+    min-width: 120px;
+    text-align: center;
   }
 
   .dropdown-menu {
@@ -411,7 +441,10 @@ export default {
   .dropdown-link {
     font-size: var(--font-size-lg);
     text-align: center;
-    margin: var(--spacing-xs) 0;
+    margin: var(--spacing-sm) 0;
+    padding: var(--spacing-md) var(--spacing-lg);
+    min-height: 48px;
+    min-width: 120px;
   }
 }
 
@@ -425,8 +458,10 @@ export default {
   }
   
   .theme-toggle-btn {
-    width: 32px;
-    height: 32px;
+    min-width: 44px;
+    min-height: 44px;
+    width: 44px;
+    height: 44px;
     font-size: var(--font-size-sm);
   }
 }
@@ -445,6 +480,7 @@ export default {
 /* Focus styles for accessibility */
 .nav-link:focus,
 .dropdown-link:focus,
+.dropdown-toggle:focus,
 .theme-toggle-btn:focus,
 .mobile-menu-toggle:focus {
   outline: 2px solid var(--secondary-color);
@@ -455,14 +491,17 @@ export default {
 /* High contrast mode support */
 @media (prefers-contrast: high) {
   .nav-link,
-  .dropdown-link {
+  .dropdown-link,
+  .dropdown-toggle {
     border: 1px solid transparent;
   }
   
   .nav-link:hover,
   .nav-link:focus,
   .dropdown-link:hover,
-  .dropdown-link:focus {
+  .dropdown-link:focus,
+  .dropdown-toggle:hover,
+  .dropdown-toggle:focus {
     border-color: var(--secondary-color);
     background: var(--bg-color);
   }
