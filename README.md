@@ -13,6 +13,27 @@ Studio 402 is a creative studio that brings together the talents of college frie
 - **Routing:** Vue Router 4
 - **Styling:** CSS3 with CSS Variables
 - **Domain:** studio402.com
+- **Deployment:** Vercel (Static Site)
+
+## 📁 Project Structure
+
+```
+├── docs/                    # Documentation
+│   ├── Concept.txt         # Project concept and specifications
+│   └── DevelopmentTodo.md  # Development roadmap and tasks
+├── public/                 # Static assets
+├── src/                    # Source code
+│   ├── assets/            # CSS and other assets
+│   ├── components/        # Vue components
+│   ├── router/            # Vue Router configuration
+│   ├── utils/             # Utility functions
+│   ├── views/             # Page components
+│   ├── App.vue            # Root component
+│   └── main.js           # Application entry point
+├── index.html             # HTML template
+├── package.json          # Dependencies and scripts
+└── vite.config.js        # Vite configuration
+```
 
 ## 📋 Development Status
 
