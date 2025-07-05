@@ -38,104 +38,64 @@
           <!-- Contact Form -->
           <section class="contact-form-section">
             <h2>Send Us a Message</h2>
-            <form @submit.prevent="submitForm" class="contact-form">
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="name">Name *</label>
-                  <input 
-                    type="text" 
-                    id="name" 
-                    v-model="form.name" 
-                    required
-                    :class="{ 'error': errors.name }"
-                  >
-                  <span v-if="errors.name" class="error-message">{{ errors.name }}</span>
-                </div>
-                
-                <div class="form-group">
-                  <label for="email">Email *</label>
-                  <input 
-                    type="email" 
-                    id="email" 
-                    v-model="form.email" 
-                    required
-                    :class="{ 'error': errors.email }"
-                  >
-                  <span v-if="errors.email" class="error-message">{{ errors.email }}</span>
-                </div>
-              </div>
+            <div class="form-instructions">
+              <p>📝 <strong>How to contact us:</strong> We use Google Forms for secure message handling. Click the button below to open our contact form in a new tab, or use the embedded form below.</p>
               
-              <div class="form-group">
-                <label for="category">Category *</label>
-                <select 
-                  id="category" 
-                  v-model="form.category" 
-                  required
-                  :class="{ 'error': errors.category }"
+              <div class="form-actions">
+                <a 
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdEXAMPLE_FORM_ID/viewform" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  class="external-form-button"
                 >
-                  <option value="">Select a category</option>
-                  <option value="general">General Inquiry</option>
-                  <option value="technical">Technical Support</option>
-                  <option value="business">Business/Partnership</option>
-                  <option value="feedback">Game Feedback</option>
-                  <option value="bug">Bug Report</option>
-                  <option value="other">Other</option>
-                </select>
-                <span v-if="errors.category" class="error-message">{{ errors.category }}</span>
+                  📱 Open Contact Form in New Tab
+                </a>
               </div>
-              
-              <div class="form-group">
-                <label for="subject">Subject *</label>
-                <input 
-                  type="text" 
-                  id="subject" 
-                  v-model="form.subject" 
-                  required
-                  :class="{ 'error': errors.subject }"
-                >
-                <span v-if="errors.subject" class="error-message">{{ errors.subject }}</span>
-              </div>
-              
-              <div class="form-group">
-                <label for="message">Message *</label>
-                <textarea 
-                  id="message" 
-                  v-model="form.message" 
-                  required
-                  rows="6"
-                  :class="{ 'error': errors.message }"
-                ></textarea>
-                <span v-if="errors.message" class="error-message">{{ errors.message }}</span>
-              </div>
-              
-              <div class="form-group">
-                <label class="checkbox-label">
-                  <input 
-                    type="checkbox" 
-                    v-model="form.newsletter"
-                  >
-                  Subscribe to updates about Studio 402 games and releases
-                </label>
-              </div>
-              
-              <button 
-                type="submit" 
-                class="submit-button"
-                :disabled="isSubmitting"
-              >
-                {{ isSubmitting ? 'Sending...' : 'Send Message' }}
-              </button>
-            </form>
-            
-            <!-- Success/Error Messages -->
-            <div v-if="submitStatus === 'success'" class="status-message success">
-              <h3>✅ Message Sent Successfully!</h3>
-              <p>Thank you for contacting Studio 402. We'll get back to you as soon as possible.</p>
             </div>
-            
-            <div v-if="submitStatus === 'error'" class="status-message error">
-              <h3>❌ Message Failed to Send</h3>
-              <p>Sorry, there was an error sending your message. Please try again or contact us directly.</p>
+
+            <!-- Embedded Google Form -->
+            <div class="embedded-form-container">
+              <div class="form-placeholder">
+                <h3>🚧 Contact Form Setup</h3>
+                <p><strong>Studio 402 Team:</strong> To complete the contact form setup, please:</p>
+                <ol>
+                  <li>Create a Google Form at <a href="https://forms.google.com" target="_blank">forms.google.com</a></li>
+                  <li>Include fields for: Name, Email, Category (dropdown), Subject, Message, Newsletter signup</li>
+                  <li>Get the form's embed code or shareable link</li>
+                  <li>Replace the placeholder URL in this component with your actual form URL</li>
+                  <li>For embedding: Use the iframe embed code provided by Google Forms</li>
+                </ol>
+                
+                <div class="temp-contact-info">
+                  <h4>🎯 Recommended Form Fields:</h4>
+                  <ul>
+                    <li><strong>Name</strong> (Short answer, required)</li>
+                    <li><strong>Email</strong> (Short answer, required, email validation)</li>
+                    <li><strong>Category</strong> (Dropdown: General Inquiry, Technical Support, Business/Partnership, Game Feedback, Bug Report, Other)</li>
+                    <li><strong>Subject</strong> (Short answer, required)</li>
+                    <li><strong>Message</strong> (Paragraph, required)</li>
+                    <li><strong>Newsletter</strong> (Checkbox: "Subscribe to Studio 402 updates")</li>
+                  </ul>
+                </div>
+
+                <!-- Example of how the embedded form will look -->
+                <div class="form-preview">
+                  <p><strong>📄 Form Preview:</strong> Once set up, your Google Form will appear here as an embedded iframe, allowing visitors to submit messages directly from your website.</p>
+                  
+                  <!-- Uncomment and replace with actual Google Form embed when ready -->
+                  <!--
+                  <iframe 
+                    src="https://docs.google.com/forms/d/e/YOUR_ACTUAL_FORM_ID/viewform?embedded=true" 
+                    width="100%" 
+                    height="800" 
+                    frameborder="0" 
+                    marginheight="0" 
+                    marginwidth="0">
+                    Loading contact form...
+                  </iframe>
+                  -->
+                </div>
+              </div>
             </div>
           </section>
 
@@ -176,101 +136,11 @@
 <script>
 export default {
   name: 'ContactView',
-  data() {
-    return {
-      form: {
-        name: '',
-        email: '',
-        category: '',
-        subject: '',
-        message: '',
-        newsletter: false
-      },
-      errors: {},
-      isSubmitting: false,
-      submitStatus: null // 'success', 'error', or null
-    }
-  },
-  methods: {
-    validateForm() {
-      this.errors = {}
-      
-      if (!this.form.name.trim()) {
-        this.errors.name = 'Name is required'
-      }
-      
-      if (!this.form.email.trim()) {
-        this.errors.email = 'Email is required'
-      } else if (!this.isValidEmail(this.form.email)) {
-        this.errors.email = 'Please enter a valid email address'
-      }
-      
-      if (!this.form.category) {
-        this.errors.category = 'Please select a category'
-      }
-      
-      if (!this.form.subject.trim()) {
-        this.errors.subject = 'Subject is required'
-      }
-      
-      if (!this.form.message.trim()) {
-        this.errors.message = 'Message is required'
-      } else if (this.form.message.trim().length < 10) {
-        this.errors.message = 'Message must be at least 10 characters long'
-      }
-      
-      return Object.keys(this.errors).length === 0
-    },
-    
-    isValidEmail(email) {
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-      return emailRegex.test(email)
-    },
-    
-    async submitForm() {
-      if (!this.validateForm()) {
-        return
-      }
-      
-      this.isSubmitting = true
-      this.submitStatus = null
-      
-      try {
-        // Simulate form submission (in real implementation, this would send to a server)
-        await new Promise(resolve => setTimeout(resolve, 2000))
-        
-        // For now, we'll just show success message
-        // In a real implementation, you would send this to your backend
-        console.log('Form submitted:', this.form)
-        
-        this.submitStatus = 'success'
-        this.resetForm()
-        
-      } catch (error) {
-        this.submitStatus = 'error'
-        console.error('Form submission error:', error)
-      } finally {
-        this.isSubmitting = false
-      }
-    },
-    
-    resetForm() {
-      this.form = {
-        name: '',
-        email: '',
-        category: '',
-        subject: '',
-        message: '',
-        newsletter: false
-      }
-      this.errors = {}
-    }
-  },
   metaInfo: {
     title: 'Contact Us - Studio 402',
     meta: [
-      { name: 'description', content: 'Contact Studio 402 game development studio. Get in touch about our games, report bugs, or inquire about partnerships.' },
-      { name: 'keywords', content: 'Studio 402, contact, game development, Production.inc, support, partnerships, indie games' }
+      { name: 'description', content: 'Contact Studio 402 game development studio. Get in touch about our games, report bugs, or inquire about partnerships using our secure contact form.' },
+      { name: 'keywords', content: 'Studio 402, contact, game development, Production.inc, support, partnerships, indie games, contact form' }
     ]
   }
 }
@@ -362,108 +232,116 @@ export default {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.form-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
-
-.form-group {
+.form-instructions {
+  background-color: var(--bg-color);
+  padding: 1.5rem;
+  border-radius: 6px;
+  border-left: 4px solid var(--secondary-color);
   margin-bottom: 1.5rem;
 }
 
-.form-group label {
-  display: block;
-  margin-bottom: 0.5rem;
+.form-instructions p {
+  margin-bottom: 1rem;
   color: var(--text-color);
-  font-weight: 600;
 }
 
-.form-group input,
-.form-group select,
-.form-group textarea {
-  width: 100%;
-  padding: 0.75rem;
-  border: 2px solid var(--border-color);
-  border-radius: 4px;
-  font-size: 1rem;
-  transition: border-color 0.3s ease;
-}
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: var(--secondary-color);
-}
-
-.form-group input.error,
-.form-group select.error,
-.form-group textarea.error {
-  border-color: var(--accent-color);
-}
-
-.error-message {
-  color: var(--accent-color);
-  font-size: 0.9rem;
-  margin-top: 0.25rem;
-  display: block;
-}
-
-.checkbox-label {
+.form-actions {
   display: flex;
-  align-items: center;
-  cursor: pointer;
-  font-weight: normal;
+  justify-content: center;
+  margin-top: 1rem;
 }
 
-.checkbox-label input {
-  width: auto;
-  margin-right: 0.5rem;
-}
-
-.submit-button {
+.external-form-button {
+  display: inline-block;
   background-color: var(--secondary-color);
   color: white;
   padding: 1rem 2rem;
-  border: none;
-  border-radius: 4px;
-  font-size: 1.1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.submit-button:hover:not(:disabled) {
-  background-color: var(--primary-color);
-}
-
-.submit-button:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
-}
-
-.status-message {
-  margin-top: 2rem;
-  padding: 1.5rem;
+  text-decoration: none;
   border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
   text-align: center;
 }
 
-.status-message.success {
-  background-color: #d4edda;
-  border: 1px solid #c3e6cb;
-  color: #155724;
+.external-form-button:hover {
+  background-color: var(--primary-color);
+  text-decoration: none;
+  color: white;
 }
 
-.status-message.error {
-  background-color: #f8d7da;
-  border: 1px solid #f5c6cb;
-  color: #721c24;
+.embedded-form-container {
+  background-color: var(--bg-color);
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.status-message h3 {
+.form-placeholder {
+  padding: 2rem;
+  text-align: left;
+}
+
+.form-placeholder h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.form-placeholder p {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.form-placeholder ol,
+.form-placeholder ul {
+  color: var(--text-color);
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.form-placeholder li {
   margin-bottom: 0.5rem;
+}
+
+.form-placeholder a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.form-placeholder a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.temp-contact-info {
+  background-color: var(--bg-light);
+  padding: 1.5rem;
+  border-radius: 6px;
+  margin: 1.5rem 0;
+  border-left: 4px solid var(--accent-color);
+}
+
+.temp-contact-info h4 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.form-preview {
+  background-color: var(--bg-light);
+  padding: 1.5rem;
+  border-radius: 6px;
+  border-left: 4px solid var(--primary-color);
+}
+
+.form-preview p {
+  font-style: italic;
+  color: var(--text-light);
+}
+
+/* Styles for the actual embedded Google Form (when implemented) */
+.embedded-form-container iframe {
+  width: 100%;
+  border: none;
+  border-radius: 6px;
 }
 
 .contact-methods {
@@ -515,8 +393,16 @@ export default {
     padding: 1.5rem;
   }
   
-  .form-row {
-    grid-template-columns: 1fr;
+  .form-instructions,
+  .form-placeholder,
+  .temp-contact-info,
+  .form-preview {
+    padding: 1.5rem;
+  }
+  
+  .external-form-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
   }
   
   .info-grid,
