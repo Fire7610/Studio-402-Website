@@ -1,82 +1,113 @@
 # Studio 402 Website
 
-Official website for Studio 402 - A creative studio composed of college friends and roommates.
+The official website for Studio 402 - A creative studio composed of college friends and roommates.
 
 ## 🎯 Project Overview
 
-This website serves as the official online presence for Studio 402, primarily built to support our mobile app publishing requirements on Google Play Store. The site includes essential legal pages, project showcases, and company information.
+Studio 402 is a creative studio that brings together the talents of college friends and roommates. This website serves as our digital presence and includes essential legal pages required for our projects, including the upcoming Production.inc app.
 
-## 🚀 Current Projects
+## 🚀 Tech Stack
 
-- **Production.inc** - Mobile application (in development)
-
-## 🛠 Tech Stack
-
-- **Frontend**: Vue.js 3 with Vite
-- **Styling**: CSS3 + Modern CSS Framework
-- **Routing**: Vue Router
-- **Deployment**: Static hosting (Netlify/Vercel)
+- **Framework:** Vue.js 3
+- **Build Tool:** Vite
+- **Routing:** Vue Router 4
+- **Styling:** CSS3 with CSS Variables
+- **Domain:** studio402.com
 
 ## 📋 Development Status
 
-Current Version: **v0.1.0** (Initial Setup)
+**Current Version:** 0.1.0 - Project Foundation ✅
+**Next Version:** 0.2.0 - Basic Layout & Navigation
 
-See `todo` file for detailed development roadmap and progress tracking.
+See `todo` file for detailed development roadmap.
 
-## 🎨 Key Features (Planned)
-
-- **Home Page**: Studio introduction and branding
-- **About Us**: Team information and studio story
-- **Projects**: Showcase of current and future projects
-- **Legal Pages**: Terms, Privacy Policy, Support (required for Play Store)
-- **Contact**: Contact form and support information
-
-## 🏃‍♂️ Quick Start
+## 🛠️ Development Setup
 
 ### Prerequisites
-- Node.js (v16+)
+- Node.js (v16 or higher)
 - npm or yarn
 
-### Development Setup
+### Installation
+
+1. Clone the repository:
 ```bash
-# Clone the repository
-git clone [repository-url]
-cd "STUDIO 402 website"
+git clone https://github.com/Fire7610/Studio-402-Website.git
+cd Studio-402-Website
+```
 
-# Install dependencies (after Vue setup)
+2. Install dependencies:
+```bash
 npm install
+```
 
-# Start development server
+3. Start development server:
+```bash
 npm run dev
+```
+
+4. Build for production:
+```bash
+npm run build
+```
+
+5. Preview production build:
+```bash
+npm run preview
 ```
 
 ## 📁 Project Structure
 
 ```
-STUDIO 402 website/
-├── docu/               # Documentation and concepts
-│   └── Concept.txt     # Project concept and requirements
-├── todo                # Development roadmap and task tracking
-├── .gitignore         # Git ignore rules
-└── README.md          # Project documentation
+├── public/                 # Static assets
+├── src/
+│   ├── assets/            # CSS, images, fonts
+│   ├── components/        # Vue components
+│   ├── router/           # Vue Router configuration
+│   ├── views/            # Page components
+│   ├── App.vue           # Root component
+│   └── main.js           # Entry point
+├── docu/                 # Documentation
+├── package.json
+├── vite.config.js
+└── todo                  # Development roadmap
 ```
 
-## 🎯 Priority Goals
+## 🎯 Key Features (Planned)
 
-1. **Play Store Compliance**: Create all required legal pages
-2. **Professional Presence**: Establish credible online presence
-3. **Project Showcase**: Platform for current and future projects
-4. **Contact & Support**: Easy communication channels
+### Legal Pages (Priority)
+- Terms and Conditions
+- Privacy Policy
+- Support
+- Contact Us
+
+### Content Pages
+- About Us
+- Projects Showcase
+- Home Page
+
+## 🚀 Deployment
+
+The website will be deployed to studio402.com when ready for production (Version 1.0.0).
+
+## 📝 Development Notes
+
+- **Development Period:** Summer 2025
+- **Priority Focus:** Legal pages for Google Play Store requirements
+- **Main Project:** Production.inc (not yet published)
+- **Team:** College friends and roommates
+
+## 🔄 Version Control
+
+We follow semantic versioning with incremental development:
+- `0.x.x` - Development versions
+- `1.0.0` - First production release
+- Each version is tagged in git for easy rollback
 
 ## 📞 Contact
 
-- **Website**: studio402.com (coming soon)
-- **Email**: [contact information]
-
-## 📄 License
-
-[License information to be added]
+For questions about Studio 402 or this website project, please contact us through the website once the contact page is implemented.
 
 ---
 
-**Studio 402** - Built with ❤️ during summer 2025
+*Created: July 5, 2025*
+*Last Updated: July 5, 2025*
