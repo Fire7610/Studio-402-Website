@@ -5,7 +5,16 @@
 Website for Studio 402 - A creative studio composed of college friends and roommates.
 **Main Domain:** studio402.com
 **Framework:** Vue.js with Vite
+**Deployment:** Vercel (Static Hosting)
 **Current Status:** Development Phase
+
+## ⚠️ Deployment Constraints (Vercel Static Hosting)
+- **No Backend Server** - Frontend-only architecture
+- **No Database** - Client-side storage only (localStorage)
+- **No Server-Side Forms** - External services required (Formspree, EmailJS)
+- **No File Processing** - Static assets only
+- **No User Authentication** - No server-side user management
+- **No Server-Side Rendering** - Static site generation only
 
 ---
 
@@ -66,9 +75,14 @@ Website for Studio 402 - A creative studio composed of college friends and roomm
 - [x] Create Terms and Conditions page - Comprehensive legal document with 12 sections
 - [x] Create Privacy Policy page - Complete privacy policy covering data collection and user rights
 - [x] Create Support page with contact information - Full support center with FAQs and technical help
-- [x] Create Contact Us page with form - Functional contact form with validation and multiple categories
+- [x] Create Contact Us page with form - ⚠️ **NEEDS EXTERNAL SERVICE** - Form currently non-functional
 - [x] Add proper meta tags for SEO - Enhanced SEO with Open Graph, Twitter cards, and structured data
 - [x] Ensure all legal pages are accessible and properly formatted - Professional styling and mobile responsive
+
+#### ⚠️ Vercel Deployment Issues to Address:
+- [ ] **MOVED TO VERSION 0.3.1** - Fix Contact Form integration
+- [ ] **Static Build Optimization** - Ensure all assets work in static deployment  
+- [ ] **Remove Server Dependencies** - Verify no backend-dependent features remain
 
 #### Google Play Store Compliance:
 - [x] **Terms and Conditions** - ✅ Ready for app store submission
@@ -77,6 +91,39 @@ Website for Studio 402 - A creative studio composed of college friends and roomm
 - [x] **Contact Methods** - ✅ Multiple ways for users to reach support
 
 **Legal Pages Status:** ✅ All pages meet Google Play Store requirements for Production.inc publishing
+
+---
+
+### ✅ Version 0.3.1 - Contact Form Fix (Google Forms Integration)
+**Status:** PENDING
+**Goal:** Replace contact form with Google Forms integration for static hosting
+
+#### Tasks:
+- [ ] **Create Google Form** - Set up form with same fields (name, email, category, subject, message)
+- [ ] **Configure Google Form settings** - Enable responses, set up email notifications
+- [ ] **Get Google Form embed code** - Extract form URL and embed options
+- [ ] **Update ContactView.vue** - Replace current form with Google Forms integration
+- [ ] **Style embedded form** - Match Studio 402 branding and design
+- [ ] **Add form instructions** - Guide users on form submission and response times
+- [ ] **Test form functionality** - Verify submissions work and emails are received
+- [ ] **Update contact page content** - Add information about Google Forms usage
+
+#### Google Forms Implementation:
+- **Chosen Service:** Google Forms (Free, unlimited submissions)
+- **Integration Method:** Embedded iframe with custom styling
+- **Backup Option:** Direct link to Google Form if embedding issues occur
+- **Email Notifications:** Automatic email alerts for new submissions
+- **Response Collection:** Google Sheets integration for response management
+
+#### Benefits of Google Forms:
+- ✅ **Free and unlimited** - No submission limits
+- ✅ **No external dependencies** - No API keys or accounts needed
+- ✅ **Automatic email notifications** - Instant alerts for new submissions
+- ✅ **Built-in spam protection** - Google's anti-spam measures
+- ✅ **Mobile responsive** - Works perfectly on all devices
+- ✅ **Easy management** - View responses in Google Sheets
+
+**Priority:** High - Simple and reliable solution for static hosting
 
 ---
 
@@ -118,41 +165,56 @@ Website for Studio 402 - A creative studio composed of college friends and roomm
 
 ### ✅ Version 1.0.0 - Production Ready
 **Status:** PENDING
-**Goal:** Final polish and deployment preparation
+**Goal:** Final polish and Vercel deployment preparation
 
 #### Tasks:
 - [ ] Final testing across all devices and browsers
-- [ ] Performance optimizations
-- [ ] Production build configuration
-- [ ] Set up deployment pipeline
-- [ ] Add Google Analytics (optional)
+- [ ] Performance optimizations for static hosting
+- [ ] Production build configuration for Vercel
+- [ ] **Set up Vercel deployment pipeline**
+- [ ] **Contact form already fixed in v0.3.1** ✅ Google Forms integration
+- [ ] Add client-side analytics (Google Analytics/Vercel Analytics)
 - [ ] Create 404 error page
-- [ ] Final security review
-- [ ] Documentation completion
+- [ ] **Remove all server-dependent features**
+- [ ] Documentation completion for static deployment
 
 ---
 
-## 🚀 Future Versions (Post 1.0.0)
+## 🚀 Future Versions (Post 1.0.0) - Static Hosting Compatible
 
-### Version 1.1.0 - Enhanced Features
-- [ ] Blog/News section
-- [ ] Project filtering and search
-- [ ] Contact form backend integration
-- [ ] Newsletter signup
+### Version 1.1.0 - Enhanced Static Features
+- [ ] **Blog/News section** - Static markdown content with Vue components
+- [ ] **Project filtering and search** - Client-side filtering with Vue
+- [ ] **External form integration** - Improve contact form with better external service
+- [ ] **Newsletter signup** - External service integration (Mailchimp, ConvertKit)
+- [ ] **Image optimization** - Compress and optimize all static assets
 
-### Version 1.2.0 - Advanced Features
-- [ ] Admin panel for content management
-- [ ] Portfolio case studies
-- [ ] Client testimonials
-- [ ] Social media integration
+### Version 1.2.0 - Advanced Static Features  
+- [ ] **Client-side project showcase** - Enhanced project galleries with static data
+- [ ] **Static testimonials section** - Hardcoded testimonials with animations
+- [ ] **Social media integration** - Static social links and embedded feeds
+- [ ] **Game screenshots gallery** - Static image galleries for Production.inc
+- [ ] **Team member profiles** - Static profile pages for studio members
+
+### ❌ REMOVED (Not Compatible with Static Hosting):
+- ~~Admin panel for content management~~ - Requires backend/database
+- ~~Contact form backend integration~~ - No server-side processing
+- ~~User authentication~~ - No backend server
+- ~~Database-driven content~~ - Static content only
+- ~~File upload functionality~~ - No server-side file processing
+- ~~Real-time features~~ - No WebSocket/server support
 
 ---
 
 ## 📝 Notes
-- **Priority Focus:** Legal pages (Terms, Privacy, Support) for Google Play Store requirements
+- **Priority Focus:** Legal pages (Terms, Privacy, Support) for Google Play Store requirements ✅
 - **Main Project:** Production.inc (not yet published)
 - **Domain:** studio402.com
 - **Development Period:** Summer 2025
+- **Deployment Platform:** Vercel (Static Hosting Only)
+- **Architecture:** Frontend-only, no backend server
+- **Contact Forms:** External services required (Formspree/EmailJS)
+- **Content Management:** Manual updates through code deployment
 
 ---
 

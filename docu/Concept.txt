@@ -8,6 +8,24 @@ Studio 402 is a creative studio composed of college friends and roommates specia
 - Framework: Vue.js
 - Domain: studio402.com
 - Development Period: Summer 2025 (during summer class)
+- **Deployment Platform: Vercel**
+- **Architecture: Static Site (Frontend Only)**
+
+## Deployment Constraints & Considerations
+
+### Vercel Limitations
+- **No Backend Server** - Static site deployment only
+- **No Database** - Client-side data storage only (localStorage, etc.)
+- **No Server-Side Forms** - Contact forms need external services or client-side solutions
+- **No File Processing** - Limited to static assets and client-side operations
+- **Function Limits** - Serverless functions have execution time and size limits (if used)
+
+### Adapted Solutions
+- **Contact Forms** - Use external services (Formspree, Netlify Forms, or EmailJS)
+- **Content Management** - Static content in Vue components and markdown
+- **Data Storage** - Local storage for user preferences, no user accounts
+- **Analytics** - Client-side analytics (Google Analytics, Vercel Analytics)
+- **SEO** - Static site generation and meta tags (no server-side rendering)
 
 ## Project Goals
 
@@ -58,3 +76,7 @@ Legal documentation pages required for Google Play Store publishing of our upcom
 - Primary target: Game developers and gaming community
 - Secondary target: College students looking for useful applications
 - Studio identity: College friends collaborating on games and helpful apps
+- **Deployment: Vercel static hosting** - Frontend-only architecture
+- **Contact forms: External service integration** - No backend server available
+- **Content updates: Manual deployment** - No CMS, content managed through code
+- **Performance: Optimized for static delivery** - Fast loading, CDN distribution
