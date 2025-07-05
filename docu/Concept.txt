@@ -1,17 +1,60 @@
-Studio 402 website, a website for our studio composed of college friends, and roommates.
-built with vue.js
-on 2025 july during summer class and while creating projects
+# Studio 402 Website - Project Concept
+Date: July 2025
 
-current projects not published yet is Production.inc
+## Overview
+Studio 402 is a creative studio composed of college friends and roommates specializing in game development. As college students, we also develop simple applications that might be useful to us and others. This website serves as our official digital presence and business hub.
 
-but inorder to publish we need a website for 
-terms and conditions, privacy policy, and other legal documents to pubish on google playstore
-main website is studio402.com
+## Technical Specifications
+- Framework: Vue.js
+- Domain: studio402.com
+- Development Period: Summer 2025 (during summer class)
 
-will add more information later
-and will update the website with more projects and information
+## Project Goals
 
-but first the website must contain
-terms and conditions, privacy policy, support, and contact us page
-an about us page
-and a projects page to showcase our projects.
+### Primary Objective
+Create a professional website to support our game development studio operations and project launches.
+
+### Immediate Need
+Legal documentation pages required for Google Play Store publishing of our upcoming game "Production.inc"
+
+## Current Projects
+- **Production.inc** - Mobile game (not yet published)
+- Future simple applications for college students and general use
+- Additional games and projects to be added as they develop
+
+## Studio Focus Areas
+### Primary Focus: Game Development
+- Mobile games for Google Play Store
+- Indie game development
+- Creative and innovative gaming experiences
+
+### Secondary Focus: Useful Applications
+- Simple apps that solve problems we encounter as college students
+- Utility applications for productivity and daily use
+- Tools that might benefit the college community
+
+## Required Website Pages
+
+### Essential Legal Pages (Priority)
+1. Terms and Conditions
+2. Privacy Policy
+3. Support Page
+4. Contact Us Page
+
+### Core Content Pages
+1. About Us - Studio story and team information
+2. Projects - Showcase of our work and portfolio
+3. Home - Main landing page
+
+## Future Expansion
+- Additional projects will be added to the portfolio
+- Website will evolve with studio growth
+- More detailed information to be added as projects develop
+
+## Development Notes
+- Built during summer class period
+- Incremental development approach
+- Focus on legal compliance first, then content enhancement
+- Primary target: Game developers and gaming community
+- Secondary target: College students looking for useful applications
+- Studio identity: College friends collaborating on games and helpful apps

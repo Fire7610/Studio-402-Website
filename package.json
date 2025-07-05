@@ -16,7 +16,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/Fire7610/Studio-402-Website/issues"
   },
