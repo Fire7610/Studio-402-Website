@@ -2,16 +2,16 @@
   <div class="support-view">
     <div class="container">
       <div class="content-wrapper">
-        <header class="page-header">
-          <h1>Support Center</h1>
-          <p class="subtitle">Get help with Studio 402 games and applications</p>
+        <header class="page-header animate-fade-in">
+          <h1 class="animate-fade-in-up">Support Center</h1>
+          <p class="subtitle animate-fade-in-up">Get help with Studio 402 games and applications</p>
         </header>
 
         <div class="support-content">
           <!-- Quick Help Section -->
-          <section class="support-section">
-            <h2>🎮 Game Support</h2>
-            <div class="support-grid">
+          <section class="support-section animate-fade-in">
+            <h2 class="animate-fade-in-up">🎮 Game Support</h2>
+            <div class="support-grid stagger-children">
               <div class="support-card">
                 <h3>Production.inc</h3>
                 <p>Our flagship mobile game currently in development</p>
@@ -37,9 +37,9 @@
           </section>
 
           <!-- Technical Support -->
-          <section class="support-section">
-            <h2>🔧 Technical Support</h2>
-            <div class="faq-list">
+          <section class="support-section animate-fade-in">
+            <h2 class="animate-fade-in-up">🔧 Technical Support</h2>
+            <div class="faq-list stagger-children">
               <div class="faq-item">
                 <h3>Installation Issues</h3>
                 <p>
@@ -99,9 +99,9 @@
           </section>
 
           <!-- System Requirements -->
-          <section class="support-section">
-            <h2>📱 System Requirements</h2>
-            <div class="requirements-grid">
+          <section class="support-section animate-fade-in">
+            <h2 class="animate-fade-in-up">📱 System Requirements</h2>
+            <div class="requirements-grid stagger-children">
               <div class="requirements-card">
                 <h3>Production.inc</h3>
                 <div class="requirements-list">
@@ -132,9 +132,9 @@
           </section>
 
           <!-- Developer Info -->
-          <section class="support-section">
-            <h2>👥 About Our Support</h2>
-            <div class="developer-info">
+          <section class="support-section animate-fade-in">
+            <h2 class="animate-fade-in-up">👥 About Our Support</h2>
+            <div class="developer-info animate-fade-in-up">
               <p>
                 Studio 402 is a small game development studio run by college friends and roommates. 
                 We're passionate about creating great games and helpful applications, and we're committed to providing 

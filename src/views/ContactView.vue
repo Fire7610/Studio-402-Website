@@ -2,16 +2,16 @@
   <div class="contact-view">
     <div class="container">
       <div class="content-wrapper">
-        <header class="page-header">
-          <h1>Contact Studio 402</h1>
-          <p class="subtitle">Get in touch with our game development team</p>
+        <header class="page-header animate-fade-in">
+          <h1 class="animate-fade-in-up">Contact Studio 402</h1>
+          <p class="subtitle animate-fade-in-up">Get in touch with our game development team</p>
         </header>
 
         <div class="contact-content">
           <!-- Contact Information -->
-          <section class="contact-info-section">
-            <h2>Contact Information</h2>
-            <div class="info-grid">
+          <section class="contact-info-section animate-fade-in">
+            <h2 class="animate-fade-in-up">Contact Information</h2>
+            <div class="info-grid stagger-children">
               <div class="info-card">
                 <h3>🎮 Studio 402</h3>
                 <p>Independent game development studio</p>
@@ -36,9 +36,9 @@
           </section>
 
           <!-- Contact Form -->
-          <section class="contact-form-section">
-            <h2>Send Us a Message</h2>
-            <div class="form-instructions">
+          <section class="contact-form-section animate-fade-in">
+            <h2 class="animate-fade-in-up">Send Us a Message</h2>
+            <div class="form-instructions animate-fade-in-up">
               <p>📝 <strong>How to contact us:</strong> We use Google Forms for secure message handling. Click the button below to open our contact form in a new tab, or use the embedded form below.</p>
               
               <div class="form-actions">
@@ -54,11 +54,11 @@
             </div>
 
             <!-- Embedded Google Form -->
-            <div class="embedded-form-container">
+            <div class="embedded-form-container animate-fade-in">
               <div class="form-placeholder">
                 <h3>🚧 Contact Form Setup</h3>
                 <p><strong>Studio 402 Team:</strong> To complete the contact form setup, please:</p>
-                <ol>
+                <ol class="stagger-children">
                   <li>Create a Google Form at <a href="https://forms.google.com" target="_blank">forms.google.com</a></li>
                   <li>Include fields for: Name, Email, Category (dropdown), Subject, Message, Newsletter signup</li>
                   <li>Get the form's embed code or shareable link</li>
@@ -66,9 +66,9 @@
                   <li>For embedding: Use the iframe embed code provided by Google Forms</li>
                 </ol>
                 
-                <div class="temp-contact-info">
+                <div class="temp-contact-info animate-fade-in">
                   <h4>🎯 Recommended Form Fields:</h4>
-                  <ul>
+                  <ul class="stagger-children">
                     <li><strong>Name</strong> (Short answer, required)</li>
                     <li><strong>Email</strong> (Short answer, required, email validation)</li>
                     <li><strong>Category</strong> (Dropdown: General Inquiry, Technical Support, Business/Partnership, Game Feedback, Bug Report, Other)</li>
@@ -79,7 +79,7 @@
                 </div>
 
                 <!-- Example of how the embedded form will look -->
-                <div class="form-preview">
+                <div class="form-preview animate-fade-in">
                   <p><strong>📄 Form Preview:</strong> Once set up, your Google Form will appear here as an embedded iframe, allowing visitors to submit messages directly from your website.</p>
                   
                   <!-- Uncomment and replace with actual Google Form embed when ready -->

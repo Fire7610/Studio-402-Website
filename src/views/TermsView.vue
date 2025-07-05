@@ -2,13 +2,13 @@
   <div class="terms-view">
     <div class="container">
       <div class="content-wrapper">
-        <header class="page-header">
-          <h1>Terms and Conditions</h1>
-          <p class="last-updated">Last updated: July 5, 2025</p>
+        <header class="page-header animate-fade-in">
+          <h1 class="animate-fade-in-up">Terms and Conditions</h1>
+          <p class="last-updated animate-fade-in-up">Last updated: July 5, 2025</p>
         </header>
 
         <div class="legal-content">
-          <section class="terms-section">
+          <section class="terms-section animate-fade-in">
             <h2>1. Agreement to Terms</h2>
             <p>
               By accessing and using Studio 402's website (studio402.com) and our applications, including Production.inc, 
@@ -17,7 +17,7 @@
             </p>
           </section>
 
-          <section class="terms-section">
+          <section class="terms-section animate-fade-in">
             <h2>2. About Studio 402</h2>
             <p>
               Studio 402 is a creative game development studio composed of college friends and roommates. 
@@ -25,13 +25,13 @@
             </p>
           </section>
 
-          <section class="terms-section">
+          <section class="terms-section animate-fade-in">
             <h2>3. Use License</h2>
             <p>
               Permission is granted to temporarily download one copy of Studio 402's materials for personal, 
               non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:
             </p>
-            <ul>
+            <ul class="stagger-children">
               <li>modify or copy the materials</li>
               <li>use the materials for any commercial purpose or for any public display</li>
               <li>attempt to reverse engineer any software contained on our platforms</li>
@@ -39,7 +39,7 @@
             </ul>
           </section>
 
-          <section class="terms-section">
+          <section class="terms-section animate-fade-in">
             <h2>4. Game and Application Services</h2>
             <p>
               Our games and applications, including Production.inc, are provided "as is" for entertainment and utility purposes. 
@@ -47,7 +47,7 @@
             </p>
           </section>
 
-          <section class="terms-section">
+          <section class="terms-section animate-fade-in">
             <h2>5. User Accounts and Conduct</h2>
             <p>
               When creating an account with our services, you agree to provide accurate information and maintain the security of your account. 
@@ -62,7 +62,7 @@
             </ul>
           </section>
 
-          <section class="terms-section">
+          <section class="terms-section animate-fade-in">
             <h2>6. Privacy and Data</h2>
             <p>
               Your privacy is important to us. Please review our Privacy Policy, which also governs your use of our services, 
@@ -70,7 +70,7 @@
             </p>
           </section>
 
-          <section class="terms-section">
+          <section class="terms-section animate-fade-in">
             <h2>7. Intellectual Property</h2>
             <p>
               All content, features, and functionality of our games and applications are owned by Studio 402 and are protected by 
@@ -78,7 +78,7 @@
             </p>
           </section>
 
-          <section class="terms-section">
+          <section class="terms-section animate-fade-in">
             <h2>8. Disclaimers</h2>
             <p>
               The materials on Studio 402's platforms are provided on an 'as is' basis. Studio 402 makes no warranties, 
@@ -87,7 +87,7 @@
             </p>
           </section>
 
-          <section class="terms-section">
+          <section class="terms-section animate-fade-in">
             <h2>9. Limitations</h2>
             <p>
               In no event shall Studio 402 or its suppliers be liable for any damages (including, without limitation, 
@@ -96,7 +96,7 @@
             </p>
           </section>
 
-          <section class="terms-section">
+          <section class="terms-section animate-fade-in">
             <h2>10. Revisions and Errata</h2>
             <p>
               The materials appearing on Studio 402's platforms could include technical, typographical, or photographic errors. 
@@ -105,7 +105,7 @@
             </p>
           </section>
 
-          <section class="terms-section">
+          <section class="terms-section animate-fade-in">
             <h2>11. Governing Law</h2>
             <p>
               These terms and conditions are governed by and construed in accordance with applicable laws, 
@@ -113,7 +113,7 @@
             </p>
           </section>
 
-          <section class="terms-section">
+          <section class="terms-section animate-fade-in">
             <h2>12. Contact Information</h2>
             <p>
               If you have any questions about these Terms and Conditions, please contact us through our 

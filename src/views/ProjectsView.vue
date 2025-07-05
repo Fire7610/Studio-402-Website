@@ -2,30 +2,30 @@
   <div class="projects-view">
     <div class="container">
       <!-- Projects Hero -->
-      <div class="projects-hero">
-        <h1>Our Game Projects</h1>
-        <p class="hero-subtitle">Innovative Mobile Games Crafted with Passion</p>
+      <div class="projects-hero animate-fade-in">
+        <h1 class="animate-fade-in-up">Our Game Projects</h1>
+        <p class="hero-subtitle animate-fade-in-up">Innovative Mobile Games Crafted with Passion</p>
       </div>
 
       <!-- Featured Project -->
-      <section class="featured-project">
+      <section class="featured-project animate-fade-in">
         <div class="project-content">
-          <div class="project-info">
-            <div class="project-badges">
+          <div class="project-info animate-slide-in-left">
+            <div class="project-badges stagger-children">
               <span class="badge-primary">🔥 Flagship Project</span>
               <span class="badge-status">🚧 In Development</span>
             </div>
-            <h2>Production.inc</h2>
-            <p class="project-tagline">The Future of Mobile Strategy Gaming</p>
-            <p class="project-description">
+            <h2 class="animate-fade-in-up">Production.inc</h2>
+            <p class="project-tagline animate-fade-in-up">The Future of Mobile Strategy Gaming</p>
+            <p class="project-description animate-fade-in-up">
               Production.inc is our flagship mobile game that combines strategic thinking with engaging 
               gameplay mechanics. Designed specifically for mobile platforms, it offers an immersive 
               experience that showcases our studio's commitment to quality and innovation.
             </p>
             
-            <div class="project-features">
+            <div class="project-features animate-fade-in">
               <h4>🎯 Key Features</h4>
-              <ul class="features-list">
+              <ul class="features-list stagger-children">
                 <li>📱 <strong>Mobile-First Design:</strong> Optimized UI/UX for touch interfaces</li>
                 <li>🎨 <strong>Stunning Graphics:</strong> Modern visual design with smooth animations</li>
                 <li>⚡ <strong>Performance Optimized:</strong> Runs smoothly on various Android devices</li>
@@ -34,9 +34,9 @@
               </ul>
             </div>
 
-            <div class="project-tech">
+            <div class="project-tech animate-fade-in">
               <h4>🛠️ Technology Stack</h4>
-              <div class="tech-tags">
+              <div class="tech-tags stagger-children">
                 <span class="tech-tag">Unity 3D</span>
                 <span class="tech-tag">C#</span>
                 <span class="tech-tag">Android</span>
@@ -45,7 +45,7 @@
               </div>
             </div>
 
-            <div class="project-status">
+            <div class="project-status animate-fade-in">
               <div class="status-info">
                 <span class="status-label">Current Status:</span>
                 <span class="status-value">Active Development</span>
@@ -61,7 +61,7 @@
             </div>
           </div>
 
-          <div class="project-visual">
+          <div class="project-visual animate-slide-in-right">
             <div class="game-mockup">
               <div class="mockup-content">
                 <div class="game-icon-large">🎮</div>
@@ -78,9 +78,9 @@
       </section>
 
       <!-- Project Development Process -->
-      <section class="development-process">
-        <h2>🔄 Our Development Process</h2>
-        <div class="process-grid">
+      <section class="development-process animate-fade-in">
+        <h2 class="animate-fade-in-up">🔄 Our Development Process</h2>
+        <div class="process-grid stagger-children">
           <div class="process-step">
             <div class="step-number">1</div>
             <h4>💡 Concept & Design</h4>
@@ -110,15 +110,15 @@
       </section>
 
       <!-- Future Projects -->
-      <section class="future-projects">
-        <h2>🔮 Future Projects</h2>
+      <section class="future-projects animate-fade-in">
+        <h2 class="animate-fade-in-up">🔮 Future Projects</h2>
         <div class="future-content">
-          <p class="future-intro">
+          <p class="future-intro animate-fade-in-up">
             While Production.inc is our current focus, we have exciting plans for future games 
             that will expand our portfolio and showcase different aspects of mobile gaming.
           </p>
           
-          <div class="future-categories">
+          <div class="future-categories stagger-children">
             <div class="category-card">
               <div class="category-icon">🎯</div>
               <h4>Strategy Games</h4>
@@ -139,10 +139,10 @@
       </section>
 
       <!-- Project Philosophy -->
-      <section class="project-philosophy">
+      <section class="project-philosophy animate-fade-in">
         <div class="philosophy-content">
-          <h2>🌟 Our Game Development Philosophy</h2>
-          <div class="philosophy-grid">
+          <h2 class="animate-fade-in-up">🌟 Our Game Development Philosophy</h2>
+          <div class="philosophy-grid stagger-children">
             <div class="philosophy-item">
               <h4>🎮 Player Experience First</h4>
               <p>Every design decision prioritizes what makes the game more enjoyable and accessible for players.</p>

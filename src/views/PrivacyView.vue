@@ -2,13 +2,13 @@
   <div class="privacy-view">
     <div class="container">
       <div class="content-wrapper">
-        <header class="page-header">
-          <h1>Privacy Policy</h1>
-          <p class="last-updated">Last updated: July 5, 2025</p>
+        <header class="page-header animate-fade-in">
+          <h1 class="animate-fade-in-up">Privacy Policy</h1>
+          <p class="last-updated animate-fade-in-up">Last updated: July 5, 2025</p>
         </header>
 
         <div class="legal-content">
-          <section class="privacy-section">
+          <section class="privacy-section animate-fade-in">
             <h2>1. Introduction</h2>
             <p>
               Studio 402 ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, 
@@ -17,12 +17,12 @@
             </p>
           </section>
 
-          <section class="privacy-section">
+          <section class="privacy-section animate-fade-in">
             <h2>2. Information We Collect</h2>
             
             <h3>Personal Information</h3>
             <p>We may collect personal information that you voluntarily provide, including:</p>
-            <ul>
+            <ul class="stagger-children">
               <li>Name and email address (when contacting us or creating accounts)</li>
               <li>Game progress and achievements in our applications</li>
               <li>Device information and identifiers</li>
@@ -31,7 +31,7 @@
 
             <h3>Automatically Collected Information</h3>
             <p>When you use our services, we may automatically collect:</p>
-            <ul>
+            <ul class="stagger-children">
               <li>Device type, operating system, and version</li>
               <li>IP address and general location information</li>
               <li>App usage statistics and performance data</li>
@@ -39,10 +39,10 @@
             </ul>
           </section>
 
-          <section class="privacy-section">
+          <section class="privacy-section animate-fade-in">
             <h2>3. How We Use Your Information</h2>
             <p>We use the collected information for various purposes:</p>
-            <ul>
+            <ul class="stagger-children">
               <li>To provide and maintain our games and applications</li>
               <li>To improve user experience and game functionality</li>
               <li>To respond to user inquiries and provide support</li>
@@ -52,12 +52,12 @@
             </ul>
           </section>
 
-          <section class="privacy-section">
+          <section class="privacy-section animate-fade-in">
             <h2>4. Information Sharing and Disclosure</h2>
             <p>
               We do not sell, trade, or rent your personal information to third parties. We may share your information only in the following circumstances:
             </p>
-            <ul>
+            <ul class="stagger-children">
               <li><strong>With your consent:</strong> When you explicitly agree to share information</li>
               <li><strong>Service providers:</strong> With trusted third-party services that help us operate our games (analytics, cloud storage)</li>
               <li><strong>Legal requirements:</strong> When required by law or to protect our rights</li>
@@ -65,7 +65,7 @@
             </ul>
           </section>
 
-          <section class="privacy-section">
+          <section class="privacy-section animate-fade-in">
             <h2>5. Data Security</h2>
             <p>
               We implement appropriate technical and organizational security measures to protect your personal information against 
@@ -74,7 +74,7 @@
             </p>
           </section>
 
-          <section class="privacy-section">
+          <section class="privacy-section animate-fade-in">
             <h2>6. Data Retention</h2>
             <p>
               We retain your personal information only for as long as necessary to fulfill the purposes outlined in this Privacy Policy, 
@@ -82,7 +82,7 @@
             </p>
           </section>
 
-          <section class="privacy-section">
+          <section class="privacy-section animate-fade-in">
             <h2>7. Children's Privacy</h2>
             <p>
               Our services are not intended for children under the age of 13. We do not knowingly collect personal information from 
@@ -91,7 +91,7 @@
             </p>
           </section>
 
-          <section class="privacy-section">
+          <section class="privacy-section animate-fade-in">
             <h2>8. Third-Party Services</h2>
             <p>
               Our games and applications may contain links to third-party websites or integrate with third-party services. 
@@ -99,10 +99,10 @@
             </p>
           </section>
 
-          <section class="privacy-section">
+          <section class="privacy-section animate-fade-in">
             <h2>9. Your Rights and Choices</h2>
             <p>Depending on your location, you may have certain rights regarding your personal information:</p>
-            <ul>
+            <ul class="stagger-children">
               <li>Access to your personal information</li>
               <li>Correction of inaccurate information</li>
               <li>Deletion of your personal information</li>
@@ -112,7 +112,7 @@
             <p>To exercise these rights, please contact us through our <router-link to="/contact">Contact page</router-link>.</p>
           </section>
 
-          <section class="privacy-section">
+          <section class="privacy-section animate-fade-in">
             <h2>10. International Data Transfers</h2>
             <p>
               Your information may be transferred to and maintained on computers located outside of your state, province, 
@@ -120,7 +120,7 @@
             </p>
           </section>
 
-          <section class="privacy-section">
+          <section class="privacy-section animate-fade-in">
             <h2>11. Changes to This Privacy Policy</h2>
             <p>
               We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new 
@@ -128,12 +128,12 @@
             </p>
           </section>
 
-          <section class="privacy-section">
+          <section class="privacy-section animate-fade-in">
             <h2>12. Contact Us</h2>
             <p>
               If you have any questions about this Privacy Policy, please contact us:
             </p>
-            <ul>
+            <ul class="stagger-children">
               <li>Through our <router-link to="/contact">Contact page</router-link></li>
               <li>Via our <router-link to="/support">Support page</router-link></li>
               <li>Website: studio402.com</li>
@@ -141,7 +141,7 @@
           </section>
         </div>
 
-        <div class="legal-footer">
+        <div class="legal-footer animate-fade-in">
           <p><strong>Studio 402</strong> | Game Development Studio</p>
           <p>Committed to protecting your privacy while delivering great gaming experiences</p>
         </div>
